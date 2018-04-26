@@ -9,7 +9,7 @@ from peigen import header_path
 
 For example, if you are using `pybind11` the following code should be contained in your `setup.py`:
 
-```
+```python
 from setuptools import setup, Extension
 
 import peigen
