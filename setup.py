@@ -2,7 +2,7 @@ import os
 from setuptools import setup
 
 # Eigen version - peigen version
-__version__ = '3.3.4-0.0'
+__version__ = '0.0.1'
 
 packages = []
 for root, dirs, files in os.walk('.'):
