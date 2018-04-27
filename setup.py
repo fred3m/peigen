@@ -2,14 +2,12 @@ import os
 from setuptools import setup
 
 # Eigen version - peigen version
-__version__ = '0.0.1'
+__version__ = '0.0.9'
 
 packages = []
 for root, dirs, files in os.walk('.'):
     if not root.startswith('./build') and '__init__.py' in files:
         packages.append(root[2:])
-print("Packages:", packages)
-
 setup(
   name = 'peigen',
   packages = packages,
@@ -17,6 +15,8 @@ setup(
   description = 'Python wrapper for Eigen C++ header',
   author = 'Fred Moolekamp',
   author_email = 'fred.moolekamp@gmail.com',
-  url = 'https://github.com/fred3m/deblender',
+  url = 'https://github.com/fred3m/peigen',
   keywords = ['eigen', 'numerical'],
+  zip_safe=False,
+  include_package_data=True,
 )

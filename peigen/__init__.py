@@ -1,3 +1,3 @@
 import os
 
-header_path = os.path.abspath(os.path.join(__file__, "..", "..", "include"))
+header_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "include"))
